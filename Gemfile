@@ -40,3 +40,6 @@ gem 'spring',        group: :development
 
 gem 'devise'
 gem 'rails_12factor'
+gem 'simple_form', '3.1.0.rc2'
+gem 'bootstrap-sass'
+gem 'dotenv-rails'
