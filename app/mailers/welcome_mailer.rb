@@ -3,11 +3,12 @@ class WelcomeMailer < ActionMailer::Base
 
   def signup(user)
     @user = user
-    mail to: user.email subject: "Welcome to FightCard!"
+    mail to: user.email, subject: "Welcome to FightCard!"    
+  end
 
   def signup(admin)
     @admin = admin
-    mail to: admin.email subject: "Welcome FightCard!" 
+    mail to: admin.email, subject: "Welcome FightCard!"
   end
 
 
