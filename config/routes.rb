@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'admins/new'
+
+  get 'admins/create'
+
   devise_for :admins
   root 'pages#home'
 
