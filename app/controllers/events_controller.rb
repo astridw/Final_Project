@@ -1,10 +1,14 @@
 class EventsController < ApplicationController
 
   def show
-    @events = Events.all
+    @events = Event.all
   end
 
   def new
+    @event = Event.new
+  end
+   
+  def create
     @event = Event.new(params(:event).require(:name, :date, :photo))
     if @event.save
       redirect_to root_path

@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-
-  get 'admins/new'
-
-  get 'admins/create'
+  root 'pages#home'
+  resources :events
+  resources :pages
+  resources :tickets
 
   devise_for :admins
-  root 'pages#home'
+
 
   devise_for :users
 

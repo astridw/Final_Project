@@ -10,7 +10,7 @@ class AdminsController < ApplicationController
 
       WelcomeMailer.signup(@admin).deliver
 
-      redirect_to_root_path, message: "#{user.email}, you have successfull signed up for FightCard"
+      redirect_to_new_admin_session_path, message: "#{user.email}, you have successfull signed up for FightCard"
     else
       render :new
     end
